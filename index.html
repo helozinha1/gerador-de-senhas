@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <!-- Chama o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="password_items">
+        <!-- Adiciona a imagem -->
+        <img src="https://png.pngtree.com/png-clipart/20230602/ourmid/pngtree-3d-lock-icon-in-purple-and-gold-png-image_7117732.png" 
+             alt="Ícone de Cadeado 3D" 
+             class="lock-icon">
+        <h1>Gerador de Senhas</h1>
+        <div class="items">
+            <label for="length">Tamanho da Senha</label>
+            <input type="number" id="length" value="12" min="1" max="20">
+        </div>
+        <div class="items">
+            <label><input type="checkbox" id="include_uppercase" checked> Incluir Maiúsculas</label>
+        </div>
+        <div class="items">
+            <label><input type="checkbox" id="include_lowercase" checked> Incluir Minúsculas</label>
+        </div>
+        <div class="items">
+            <label><input type="checkbox" id="include_numbers" checked> Incluir Números</label>
+        </div>
+        <div class="items">
+            <label><input type="checkbox" id="include_symbols" checked> Incluir Símbolos</label>
+        </div>
+        <button id="generate">Gerar Senha</button>
+        <div id="result">
+            <p>Sua senha gerada:</p>
+            <div id="password_display">Clique em "Gerar Senha"</div>
+        </div>
+    </div>
+    <!-- Chama o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

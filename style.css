@@ -1,0 +1,102 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #D8BFD8, #6A0DAD, #4B0082); /* Gradiente horizontal */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+}
+
+/* Container principal */
+#password_items {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 1.4; /* Espaçamento entre linhas no título */
+}
+
+/* Ícone de cadeado */
+.lock-icon {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Campo de exibição da senha */
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#password_display {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 18px;
+    word-wrap: break-word;
+    line-height: 1.5; /* Espaçamento entre linhas no campo de exibição */
+}
+
+/* Campo de entrada para o tamanho da senha */
+.items input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 15px; /* Espaçamento abaixo do campo */
+}
+
+/* Botão de gerar senha */
+button#generate {
+    background-color: #FFFFFF;
+    color: #4B0082;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 15px; /* Espaçamento acima do botão */
+}
+
+button#generate:hover {
+    background-color: #D8BFD8;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Espaçamento entre os itens */
+.items {
+    margin-bottom: 15px; /* Espaçamento entre os elementos */
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    #password_items {
+        width: 90%;
+    }
+}
