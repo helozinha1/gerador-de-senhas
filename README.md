@@ -22,4 +22,3 @@ A interface é simples e moderna, com um fundo em degradê e um design responsiv
 - **CSS3**: Estilização da interface.
 - **JavaScript**: Lógica para geração de senhas.
 
-## 📂 Estrutura do Projeto
